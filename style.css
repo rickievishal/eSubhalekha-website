@@ -1,0 +1,688 @@
+@font-face {
+  font-family: 'customfont';
+  src: url('./assets/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #DA2E78;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: 18px;
+  z-index: 40;
+}
+
+.page-1 {
+  font-family: customfont;
+  padding-top: 60px;
+  background-color: #F7F2EA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: calc(100vh - 60px);
+  padding-bottom: 40px;
+}
+
+.bride-groom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+.bride-groom-left{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.bride-groom-left h1{
+  font-size: 90px;
+  color: #DA2E78;
+}
+
+.bride-groom-right{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.bride-groom-right h1{
+  font-size: 90px;
+  color: #DA2E78;
+}
+
+.date-links {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.date-and-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date-and-time-element-1,
+.date-and-time-element-2,
+.date-and-time-element-3 {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-and-time-element-1 {
+  background-color: white;
+  color: #DA2E78;
+}
+
+.date-and-time-element-2 {
+  background-color: #DA2E78;
+  color: white;
+}
+
+.date-and-time-element-3 {
+  background-color: white;
+  color: #DA2E78;
+}
+
+.date-and-time-element-1 h2,
+.date-and-time-element-2 h2,
+.date-and-time-element-3 h2 {
+  font-size: 30px;
+}
+
+.page-1-links {
+  display: flex;
+  gap: 20px;
+}
+
+.page-1-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.page-1-2-joint {
+  width: 200px;
+  background-color: white;
+  border: 5px solid #DA2E78;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.page-1-2-joint p {
+  font-family: customfont;
+  font-size: 20px;
+  color: #DA2E78;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.page-2 {
+  font-family: customfont;  
+  height: 120vh;
+  background-color: #DA2E78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.page-2-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  align-items: center;
+}
+
+.page-2-heading{
+  color: white;
+  font-size: 100px;
+}
+
+.page-2-subtext{
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wave-svg {
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+  width: 100%;
+}
+
+
+.page-2-3-joint {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  text-align: center;
+  color: #FF86BA;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.page-3{
+  height: 120vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: customfont;
+}
+
+.page-3-container{
+  width: 70%;
+  height: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.page-3-left{
+  width: 50%;
+  display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bride-image{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: pink;
+  margin-top: 30%;
+  box-shadow: 0 0 10px 5px lightgray;
+}
+
+.bride-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.page-3-right{
+  width: 50%;
+  display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.groom-image{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: pink;
+  box-shadow: 0 0 10px 5px lightgray;
+}
+
+.groom-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.page-3-left-text, .page-3-right-text{
+  margin-top: 10px;
+}
+
+.page-4{
+  height: 180vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: customfont;
+  align-items: center;
+}
+
+.page-4-header{
+  background-color: #832E52;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 200px;
+}
+
+.page-4-heading{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 50px;
+}
+
+.explore-more-button{
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  margin: 60px 0px;
+  font-size: 20px;
+}
+
+.page-4-images-container{
+  height: 50%;
+  width: 50%;
+  display: flex;
+}
+
+.page-4-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+
+}
+
+.page-4-left img{
+  width: 97%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-4-right img{
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+}
+
+.page-4-right{
+  width: 50%;
+  height: 100%;
+}
+
+.page-4-right-top{
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.page-4-right-bottom{
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.page-5{
+  height: 70vh;
+  background-color:#DA2E78;
+  font-family: customfont;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-5-heading{
+  font-size: 70px;
+  color: white;
+}
+
+.attending-btn{
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  margin: 60px 0px;
+  font-size: 20px;
+  background-color: white;
+  color:#DA2E78;
+}
+
+.page-6{
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  font-family: customfont;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-container{
+  margin-right: 100px;
+}
+
+.events-container h1{
+  font-size: 120px;
+  color: white;
+}
+
+.events-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.events-links button{
+  padding: 5px 0px;
+  width: 100px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.events-arrow{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.events-arrow img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.events-desc{
+  width: 400px;
+  color: white;
+  text-align: left;
+  display: flex;
+  justify-content: start;
+}
+
+.page-8{
+  height: 180vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: customfont;
+}
+
+.page-8-event-1{
+  height: 32%;
+  background-image: url('./assets/event-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+}
+
+.page-8-event-2{
+  height: 32%;
+  background-image: url('./assets/event-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+}
+
+.page-8-event-3{
+  height: 32%;
+  background-image: url('./assets/event-3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+}
+
+.page-7{
+  height: 100vh;
+  background-color: black;
+  font-family: customfont;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.page-7 h1{
+  font-size: 50px;
+}
+
+.page-7 p{
+  font-size: 20px;
+}
+.page-7-top{
+  max-width: 60%;
+}
+
+.page-7-bottom{
+  max-width: 60%;
+}
+
+.page-9{
+  display: flex;
+  height: 40vh;
+  background-color:#DA2E78;
+  color: white;
+  text-align: left;
+  font-family: customfont;
+  align-items: center;
+}
+
+.page-9-left{
+  width: 70%;
+  padding-left: 30px;
+}
+
+.page-9-left h1{
+  font-size: 40px;
+}
+
+.page-9-left p{
+  font-size: 20px;
+}
+
+.page-9-right{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page-9-qr{
+  height: 30vh;
+  aspect-ratio: 1;
+  background-color: white;
+  color: black;
+}
+
+.page-10{
+  height: 120vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: customfont;
+}
+
+.page-10-left{
+  height: 90%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.venue-left-container{
+  width: 90%;
+  height: 80%;
+}
+
+.venue-img{
+  height:calc(0.72*120vh - 100px);
+  width: 100%;
+}
+
+.page-10-right{
+  width: 30%;
+  height: 72%;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.page-10-text{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.page-10-text h1{
+  font-size: 100px;
+}
+
+.page-10-text p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.venue-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-11{
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: customfont;
+}
+
+.page-11 h1{
+  font-size: 100px;
+  max-width: 40%;
+  float: left;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.page-11 p{
+  width: 90%;
+  text-align: center;
+}
+
+.back-to-top-btn{
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  margin: 60px 0px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .bride-groom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .page-1-bride, .page-1-groom {
+      font-size: 60px;
+      margin: 0;
+  }
+
+  .date-links {
+      margin-top: 50px;
+  }
+
+  .date-and-time-element-1,
+  .date-and-time-element-2,
+  .date-and-time-element-3 {
+      width: 60px;
+      height: 60px;
+  }
+
+  .date-and-time-element-1 h2,
+  .date-and-time-element-2 h2,
+  .date-and-time-element-3 h2 {
+      font-size: 20px;
+  }
+
+  .page-1-2-joint {
+      width: 150px;
+  }
+
+  .page-1-2-joint p {
+      font-size: 16px;
+  }
+}
