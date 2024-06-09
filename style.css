@@ -58,6 +58,12 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: 10%;
   left: 0;
 }
+.main-decor{
+  position: absolute;
+ right: 50%;
+ transform: translateX(50%);
+
+}
 .bride-groom {
   display: flex;
   
@@ -70,6 +76,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .bride-groom-left{
+  position: relative;
   width: 50%;
   display: flex;
   justify-content: flex-end;
